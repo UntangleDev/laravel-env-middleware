@@ -1,0 +1,45 @@
+{
+  "name": "untangledev/laravel-env-middlware",
+  "description": "A Laravel middleware for restricting access based on environment name",
+  "type": "library",
+  "homepage": "https://github.com/untangledev/laravel-env-middlware",
+  "keywords": [
+    "untangledev",
+    "laravel-env-middlware"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Billy Grant",
+      "email": "billygrant24@icloud.com",
+      "homepage": "https://github.com/untangledev/laravel-env-middlware",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "illuminate/http": "^5.7"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "UntangleDev\\LaravelEnvMiddleware\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "UntangleDev\\LaravelEnvMiddleware\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
